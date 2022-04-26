@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMDB</title>
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="tmdb.jpg" alt="movie DB" />
+      <button onclick="showMovies()">Movie List</button>
+      <button onclick="showLikedMovies()">Liked Movies</button>
+    </div>
+    <div id="page-control">
+      <h1>The Most Popular Movies</h1>
+      <div id="pagenav">
+        <button id="previous" onclick="showPreviousPage()">Previous</button>
+        <p id="page"></p>
+        <button id="next" onclick="showNextPage()">Next</button>
+      </div>
+    </div>
+    <div id="main"></div>
+
+    <div id="backdrop">
+      <button id="close-movie" onclick="showMovies()">Close</button>
+      <div id="aux"></div>
+      <div id="movie-backdrop"></div>
+      <div id="movie-detail">
+        <div id="movie-image"></div>
+        <div id="movie-description">
+          <div id="movie-title"></div>
+          <div id="movie-genre"></div>
+          <div id="movie-overview"></div>
+          <div id="movie-production"></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
